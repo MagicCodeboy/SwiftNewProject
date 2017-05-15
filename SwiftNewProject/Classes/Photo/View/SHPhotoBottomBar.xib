@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SHPhotoBottomBar" customModule="SwiftNewProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4jw-yE-l1j">
+                    <rect key="frame" x="0.0" y="0.0" width="64" height="45"/>
+                    <state key="normal" image="bottom_bar_back_normal"/>
+                    <connections>
+                        <action selector="didTappedBackButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="JFr-7v-VEg"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K3e-GC-bO6">
+                    <rect key="frame" x="64" y="0.5" width="64" height="45"/>
+                    <state key="normal" image="bottom_bar_edit_normal"/>
+                    <connections>
+                        <action selector="didTappedEditButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="0Yt-cI-Rt1"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VoK-29-vTK">
+                    <rect key="frame" x="128" y="0.5" width="64" height="45"/>
+                    <state key="normal" image="bottom_bar_comment_normal"/>
+                    <connections>
+                        <action selector="didTappedCommentButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="63w-KI-dBw"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YJB-hh-xl0">
+                    <rect key="frame" x="192" y="0.5" width="64" height="45"/>
+                    <state key="normal" image="bottom_bar_collection_normal1"/>
+                    <connections>
+                        <action selector="didTappedCollectionButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="6kd-6S-Miv"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1AM-5J-fbL">
+                    <rect key="frame" x="256" y="0.5" width="64" height="45"/>
+                    <state key="normal" image="bottom_bar_share_normal"/>
+                    <connections>
+                        <action selector="didTappedShareButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="Lrc-3W-sSb"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="1AM-5J-fbL" firstAttribute="height" secondItem="YJB-hh-xl0" secondAttribute="height" id="1Bj-5I-Ha6"/>
+                <constraint firstItem="1AM-5J-fbL" firstAttribute="width" secondItem="YJB-hh-xl0" secondAttribute="width" id="1TP-Vt-Yua"/>
+                <constraint firstItem="VoK-29-vTK" firstAttribute="height" secondItem="K3e-GC-bO6" secondAttribute="height" id="3nm-HK-lBk"/>
+                <constraint firstItem="K3e-GC-bO6" firstAttribute="centerY" secondItem="4jw-yE-l1j" secondAttribute="centerY" id="4tG-Jg-2ja"/>
+                <constraint firstItem="VoK-29-vTK" firstAttribute="centerY" secondItem="K3e-GC-bO6" secondAttribute="centerY" id="6ix-tc-pGM"/>
+                <constraint firstItem="4jw-yE-l1j" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="EdC-bI-gMI"/>
+                <constraint firstItem="K3e-GC-bO6" firstAttribute="width" secondItem="4jw-yE-l1j" secondAttribute="width" id="IEc-ZL-8jA"/>
+                <constraint firstItem="4jw-yE-l1j" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ODO-34-qR8"/>
+                <constraint firstItem="1AM-5J-fbL" firstAttribute="leading" secondItem="YJB-hh-xl0" secondAttribute="trailing" id="RVM-X3-bBa"/>
+                <constraint firstItem="YJB-hh-xl0" firstAttribute="leading" secondItem="VoK-29-vTK" secondAttribute="trailing" id="SEx-jA-tfb"/>
+                <constraint firstItem="K3e-GC-bO6" firstAttribute="leading" secondItem="4jw-yE-l1j" secondAttribute="trailing" id="ScI-VP-3wk"/>
+                <constraint firstItem="YJB-hh-xl0" firstAttribute="centerY" secondItem="VoK-29-vTK" secondAttribute="centerY" id="T1H-WM-pTD"/>
+                <constraint firstItem="VoK-29-vTK" firstAttribute="leading" secondItem="K3e-GC-bO6" secondAttribute="trailing" id="Ygl-ba-usd"/>
+                <constraint firstItem="VoK-29-vTK" firstAttribute="width" secondItem="K3e-GC-bO6" secondAttribute="width" id="dCY-7P-fGC"/>
+                <constraint firstAttribute="bottom" secondItem="4jw-yE-l1j" secondAttribute="bottom" id="eRY-Jz-EwE"/>
+                <constraint firstItem="YJB-hh-xl0" firstAttribute="width" secondItem="VoK-29-vTK" secondAttribute="width" id="ec9-nm-8gx"/>
+                <constraint firstItem="1AM-5J-fbL" firstAttribute="centerY" secondItem="YJB-hh-xl0" secondAttribute="centerY" id="gYH-Rg-eKh"/>
+                <constraint firstItem="YJB-hh-xl0" firstAttribute="height" secondItem="VoK-29-vTK" secondAttribute="height" id="gcu-um-HZS"/>
+                <constraint firstAttribute="trailing" secondItem="1AM-5J-fbL" secondAttribute="trailing" id="hDT-Bg-kMC"/>
+                <constraint firstItem="K3e-GC-bO6" firstAttribute="height" secondItem="4jw-yE-l1j" secondAttribute="height" id="jqA-jr-hsl"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="collectionButton" destination="YJB-hh-xl0" id="JzQ-5D-djP"/>
+                <outlet property="commentButton" destination="VoK-29-vTK" id="n6Y-BN-mPy"/>
+            </connections>
+            <point key="canvasLocation" x="6" y="99"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bottom_bar_back_normal" width="20" height="20"/>
+        <image name="bottom_bar_collection_normal1" width="22" height="22"/>
+        <image name="bottom_bar_comment_normal" width="22" height="22"/>
+        <image name="bottom_bar_edit_normal" width="20" height="20"/>
+        <image name="bottom_bar_share_normal" width="22" height="22"/>
+    </resources>
+</document>
